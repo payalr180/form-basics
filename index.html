@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <title>Box Model</title>
+      <link rel="stylesheet" href="src/styles.css">
+   </head>
+   <body>
+      <div class="header">
+         <h2 class="header-title">Get Set Go...</h2>
+      </div>
+      <div class="container">
+         <form class="form" id="login">
+            <h2 class="form-title">LOGIN</h2>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+               <p class="form-input-label">Username</p>
+               <input type="text" autofocus class="form-input" placeholder="Username"/>
+               <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+               <p class="form-input-label">Password</p>
+               <input type="password" class="form-input" placeholder="Password"/>
+            </div>
+            <button class="form-button" type="submit">Login</button>
+            <p class="form-text">
+               <a href="#" class="form-link">Forgot Password</a>
+            </p>
+            <p class="form-text">
+               <a class="form-link" id="linkToCreateAccount">Don't have an account? Create Account</a>
+            </p>
+         </form>
+         <form class="form form-hidden" id="signup">
+            <h2 class="form-title">Create Account</h2>
+            <div class="form-message form-message-error"></div>
+            <div class="form-input-group">
+               <p class="form-input-label">Username</p>
+               <input type="text" id="signUpUsername" autofocus class="form-input" placeholder="Username"/>
+               <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+               <p class="form-input-label">Email Address</p>
+               <input type="text" autofocus class="form-input" placeholder="Email Address"/>
+               <div class="form-input-error-message"></div>
+            </div>
+            <div class="form-input-group">
+               <p class="form-input-label">Password</p>
+               <input type="password" class="form-input" placeholder="Password"/>
+            </div>
+            <div class="form-input-group">
+               <p class="form-input-label">Confirm password</p>
+               <input type="password" class="form-input" placeholder="Confirm password"/>
+            </div>
+            <button class="form-button" type="submit">Sign Up</button>
+            <p class="form-text">
+               <a class="form-link" id="linkToLogin">Already have a account? Sign In</a>
+            </p>
+         </form>
+      </div>
+      <script src="src/main.js"></script>
+   </body>
+</html>
